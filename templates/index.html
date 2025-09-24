@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte - Sua Voz Ativa</title>
+  <!-- 🔹 Importa o CSS corretamente no Flask -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- 🔹 Menu fixo -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Tela Inicial</a></li>
+        <li><a href="#acesso">Acesso rápido</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#agir">Como agir</a></li>
+        <li><a href="#denuncia">Denúncia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🔹 Tela inicial -->
+  <section id="inicio" class="section bg-bege">
+    <div class="content">
+      <h1 class="titulo vermelho">Reporte</h1>
+      <h2 class="subtitulo vermelho">A Sua Voz Ativa</h2>
+      <p>
+        Este site foi totalmente criado por estudantes do 7º do Colégio Militar de Porto Alegre para a Feira de Ciências, Arte e Cultura de 2025. Trabalhamos muito nesse projeto, então esperamos que goste!
+      </p>
+      <a href="#acesso" class="btn verde">Acesso rápido</a>
+    </div>
+    <img src="{{ url_for('static', filename='img/inicio.png') }}" alt="Crianças felizes" class="ilustracao">
+  </section>
+
+  <!-- 🔹 Acesso rápido -->
+  <section id="acesso" class="section bg-verde">
+    <div class="content">
+      <h1 class="titulo rosa">Acesso rápido</h1>
+      <ul class="acesso-lista">
+        <li><a href="#inicio" class="link rosa">Tela inicial</a></li>
+        <li><a href="#objetivo" class="link vermelho">Objetivo</a></li>
+        <li><a href="#agir" class="link amarelo">Como agir</a></li>
+        <li><a href="#denuncia" class="link azul">Denúncia</a></li>
+      </ul>
+    </div>
+    <img src="{{ url_for('static', filename='img/nao-bullying.png') }}" alt="Diga não ao bullying" class="ilustracao">
+  </section>
+
+  <!-- 🔹 Objetivo -->
+  <section id="objetivo" class="section bg-vermelho">
+    <div class="content">
+      <h1 class="titulo vermelho">Objetivo</h1>
+      <p>
+        Este site tem como principal objetivo oferecer um espaço seguro para que estudantes possam relatar situações de bullying e cyberbullying. Ao criar este canal, buscamos:
+      </p>
+      <ul>
+        <li>Incentivar a responsabilidade e a empatia entre os alunos;</li>
+        <li>Estimular a atitude de apoio às vítimas e o rompimento com o silêncio;</li>
+        <li>Orientar os estudantes sobre como agir de forma segura diante de casos de agressão;</li>
+        <li>Facilitar a comunicação entre os alunos e a equipe pedagógica da escola;</li>
+        <li>Encorajar denúncias responsáveis, evitando que o bullying seja ignorado, incentivado ou minimizado;</li>
+        <li>Contribuir para um ambiente escolar mais acolhedor, respeitoso e seguro para todos.</li>
+      </ul>
+      <a href="#inicio" class="btn rosa">Tela inicial</a>
+      <a href="#acesso" class="btn verde">Acesso rápido</a>
+    </div>
+    <img src="{{ url_for('static', filename='img/chat.png') }}" alt="Balões de diálogo" class="ilustracao">
+  </section>
+
+  <!-- 🔹 Como agir -->
+  <section id="agir" class="section bg-amarelo">
+    <div class="content">
+      <h1 class="titulo amarelo">Como agir</h1>
+      <p>
+        Ao presenciar uma situação de bullying, é fundamental agir com responsabilidade e empatia para ajudar a vítima e combater esse comportamento.
+      </p>
+      <p>
+        Primeiro, não fique em silêncio! Demonstrar apoio à pessoa que sofre é essencial. Se for seguro, intervenha de maneira calma e firme, tentando interromper o agressor sem provocar mais conflito.
+      </p>
+      <p>
+        Caso não consiga agir diretamente, busque a ajuda de um adulto responsável (professor, coordenador ou orientador).
+      </p>
+      <a href="#inicio" class="btn rosa">Tela inicial</a>
+      <a href="#acesso" class="btn verde">Acesso rápido</a>
+    </div>
+    <img src="{{ url_for('static', filename='img/action.png') }}" alt="Take Action" class="ilustracao">
+  </section>
+
+  <!-- 🔹 Denúncia -->
+  <section id="denuncia" class="section bg-azul">
+    <div class="content">
+      <h1 class="titulo azul">Denúncia</h1>
+      <p>
+        Se você está sendo vítima ou presenciou alguma situação de bullying ou cyberbullying em nossa escola, este é um espaço seguro para contar o que aconteceu.
+      </p>
+      <p>
+        Sua denúncia será encaminhada com responsabilidade à equipe da Seção Psicopedagógica, que irá analisar o caso com seriedade, sempre respeitando sua privacidade.
+      </p>
+      <p class="importante">Importante: Não utilize este espaço para falsas acusações.</p>
+      <p>
+        <strong>Link para denúncias:</strong><br>
+        <a href="https://docs.google.com/forms" target="_blank">Clique aqui para acessar</a>
+      </p>
+      <p><strong>Contato:</strong> denunciebullyingcmpa@gmail.com</p>
+      <a href="#inicio" class="btn rosa">Tela inicial</a>
+      <a href="#acesso" class="btn verde">Acesso rápido</a>
+    </div>
+    <img src="{{ url_for('static', filename='img/megafone.png') }}" alt="Megafone" class="ilustracao">
+  </section>
+
+</body>
+</html>
+
+

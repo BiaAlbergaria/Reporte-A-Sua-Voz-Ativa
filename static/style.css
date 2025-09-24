@@ -1,0 +1,143 @@
+/* 🔹 Importa fontes bonitas */ 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap');
+
+/* 🔹 Estilo geral */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #e6dad1;
+  color: #222;
+}
+
+/* 🔹 Menu fixo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0 30px;
+}
+nav ul li {
+  margin-left: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Estrutura das seções */
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10% 100px;
+  min-height: 100vh;
+}
+.content {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ilustracao {
+  max-width: 350px;  /* aumenta as imagens */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 🔹 Títulos */
+.titulo, .subtitulo {
+  font-family: "Fredoka One", cursive;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.titulo {
+  font-size: 2.8rem;
+}
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* 🔹 Cores dos títulos */
+.titulo.rosa { color: #e91e63; }
+.titulo.laranja { color: #ff7043; }
+.titulo.vermelho { color: #e53935; }
+.titulo.amarelo { color: #fbc02d; }
+.titulo.azul { color: #3949ab; }
+
+/* 🔹 Fundos em faixas diagonais */
+.bg-bege { background: #e6dad1; }
+.bg-verde {
+  background: linear-gradient(160deg, #a5d6a7 60%, #e6dad1 60%);
+}
+.bg-vermelho {
+  background: linear-gradient(200deg, #ef9a9a 60%, #e6dad1 60%);
+}
+.bg-amarelo {
+  background: linear-gradient(160deg, #ffe082 60%, #e6dad1 60%);
+}
+.bg-azul {
+  background: linear-gradient(200deg, #90caf9 60%, #e6dad1 60%);
+}
+
+/* 🔹 Botões */
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  margin: 8px 8px 0 0;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  max-width: fit-content; /* 🔹 botão só abraça o texto */
+}
+.btn.rosa { background: #e91e63; }
+.btn.verde { background: #43a047; }
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05); /* efeito bonitinho */
+}
+
+/* 🔹 Lista acesso rápido */
+.acesso-lista {
+  list-style: none;
+  padding: 0;
+}
+.acesso-lista li {
+  margin: 10px 0;
+}
+.link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: white;
+}
+.link.rosa { color: #e91e63; border: 2px solid #e91e63; }
+.link.vermelho { color: #e53935; border: 2px solid #e53935; }
+.link.amarelo { color: #fbc02d; border: 2px solid #fbc02d; }
+.link.azul { color: #3949ab; border: 2px solid #3949ab; }
+
