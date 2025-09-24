@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reporte - Sua Voz Ativa</title>
-  <!-- 🔹 Importa o CSS corretamente no Flask -->
+  <!-- CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -27,6 +27,7 @@
     <div class="content">
       <h1 class="titulo vermelho">Reporte</h1>
       <h2 class="subtitulo vermelho">A Sua Voz Ativa</h2>
+      <p class="slogan">FALE. OUÇA. MUDE.</p>
       <p>
         Este site foi totalmente criado por estudantes do 7º do Colégio Militar de Porto Alegre para a Feira de Ciências, Arte e Cultura de 2025. Trabalhamos muito nesse projeto, então esperamos que goste!
       </p>
@@ -111,7 +112,10 @@
     <img src="{{ url_for('static', filename='img/megafone.png') }}" alt="Megafone" class="ilustracao">
   </section>
 
+  <!-- 🔹 Rodapé -->
+  <footer>
+    <p>Created by <strong>Beatriz Bandeira</strong> & <strong>Graziela Van Teffelen</strong> - Mostratec 2025</p>
+  </footer>
+
 </body>
 </html>
-
-
