@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reporte - Sua Voz Ativa</title>
-  <!-- CSS -->
+
+  <!-- 🔹 CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- 🔹 PWA (app instalável) -->
+  <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('{{ url_for('static', filename='service-worker.js') }}')
+        .then(() => console.log("Service Worker registrado com sucesso!"))
+        .catch(err => console.error("Erro ao registrar o Service Worker:", err));
+    }
+  </script>
 </head>
 <body>
 
@@ -29,7 +40,8 @@
       <h2 class="subtitulo vermelho">A Sua Voz Ativa</h2>
       <p class="slogan">FALE. OUÇA. MUDE.</p>
       <p>
-        Este site foi totalmente criado por estudantes do 7º do Colégio Militar de Porto Alegre para a Feira de Ciências, Arte e Cultura de 2025. Trabalhamos muito nesse projeto, então esperamos que goste!
+        Este site foi totalmente criado por estudantes do 7º ano do Colégio Militar de Porto Alegre
+        para a Feira de Ciências, Arte e Cultura de 2025. Trabalhamos muito nesse projeto, então esperamos que goste!
       </p>
       <a href="#acesso" class="btn verde">Acesso rápido</a>
     </div>
@@ -55,7 +67,8 @@
     <div class="content">
       <h1 class="titulo vermelho">Objetivo</h1>
       <p>
-        Este site tem como principal objetivo oferecer um espaço seguro para que estudantes possam relatar situações de bullying e cyberbullying. Ao criar este canal, buscamos:
+        Este site tem como principal objetivo oferecer um espaço seguro para que estudantes possam relatar situações
+        de bullying e cyberbullying. Ao criar este canal, buscamos:
       </p>
       <ul>
         <li>Incentivar a responsabilidade e a empatia entre os alunos;</li>
@@ -79,7 +92,8 @@
         Ao presenciar uma situação de bullying, é fundamental agir com responsabilidade e empatia para ajudar a vítima e combater esse comportamento.
       </p>
       <p>
-        Primeiro, não fique em silêncio! Demonstrar apoio à pessoa que sofre é essencial. Se for seguro, intervenha de maneira calma e firme, tentando interromper o agressor sem provocar mais conflito.
+        Primeiro, não fique em silêncio! Demonstrar apoio à pessoa que sofre é essencial. Se for seguro, intervenha de maneira calma e firme,
+        tentando interromper o agressor sem provocar mais conflito.
       </p>
       <p>
         Caso não consiga agir diretamente, busque a ajuda de um adulto responsável (professor, coordenador ou orientador).
@@ -95,10 +109,12 @@
     <div class="content">
       <h1 class="titulo azul">Denúncia</h1>
       <p>
-        Se você está sendo vítima ou presenciou alguma situação de bullying ou cyberbullying em nossa escola, este é um espaço seguro para contar o que aconteceu.
+        Se você está sendo vítima ou presenciou alguma situação de bullying ou cyberbullying em nossa escola,
+        este é um espaço seguro para contar o que aconteceu.
       </p>
       <p>
-        Sua denúncia será encaminhada com responsabilidade à equipe da Seção Psicopedagógica, que irá analisar o caso com seriedade, sempre respeitando sua privacidade.
+        Sua denúncia será encaminhada com responsabilidade à equipe da Seção Psicopedagógica,
+        que irá analisar o caso com seriedade, sempre respeitando sua privacidade.
       </p>
       <p class="importante">Importante: Não utilize este espaço para falsas acusações.</p>
       <p>
@@ -114,7 +130,8 @@
 
   <!-- 🔹 Rodapé -->
   <footer>
-    <p>Created by <strong>Beatriz Bandeira</strong> & <strong>Graziela Van Teffelen</strong></p>
+    <p><strong>FALE. OUÇA. MUDE.</strong></p>
+    <p>Created by <strong>Beatriz Bandeira</strong> & <strong>Graziela Van Teffelen</strong> • Mostratec 2025</p>
   </footer>
 
 </body>
